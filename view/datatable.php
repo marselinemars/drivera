@@ -9,19 +9,19 @@
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="view/resources/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="view/resources/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="view/resources/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -36,23 +36,23 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="view/resources/vendors/styles/icon-font.min.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/plugins/datatables/css/dataTables.bootstrap4.min.css"
+			href="view/resources/src/plugins/datatables/css/dataTables.bootstrap4.min.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/plugins/datatables/css/responsive.bootstrap4.min.css"
+			href="view/resources/src/plugins/datatables/css/responsive.bootstrap4.min.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/style.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
@@ -87,7 +87,7 @@
 		<div class="pre-loader">
 			<div class="pre-loader-box">
 				<div class="loader-logo">
-					<img src="logo.png"  width="400" 
+					<img src="view/resources/logo.png"  width="400" 
 					height="500" alt="" />
 				</div>
 				<div class="loader-progress" id="progress_div">
@@ -192,7 +192,7 @@
 								<ul>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="view/resources/vendors/images/img.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -202,7 +202,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo1.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo1.jpg" alt="" />
 											<h3>Lea R. Frith</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -212,7 +212,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo2.jpg" alt="" />
 											<h3>Erik L. Richards</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -222,7 +222,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo3.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -232,7 +232,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo4.jpg" alt="" />
 											<h3>Renee I. Hansen</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -242,7 +242,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="view/resources/vendors/images/img.jpg" alt="" />
 											<h3>Vicki M. Coleman</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -264,7 +264,7 @@
 							data-toggle="dropdown"
 						>
 							<span class="user-icon">
-								<img src="vendors/images/photo1.jpg" alt="" />
+								<img src="view/resources/vendors/images/photo1.jpg" alt="" />
 							</span>
 							<span class="user-name">Ross C. Lopez</span>
 						</a>
@@ -463,7 +463,7 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index3.html">
-					<img src="logo.png"
+					<img src="view/resources/logo.png"
 					width= "115 "
 					height="50"
 					text-align="right-sidebar"
@@ -636,30 +636,29 @@
 										<th>Phone</th>
 										<th>Gender</th>
 										<th>Age</th>
-										<th>Start Date </th>
 										
 									</tr>
 								</thead>
+
+
+
+
 								<tbody>
-									<tr>
-										<td class="table-plus">Azizah </td>
-										<td>Boudali </td>
-										<td>Azibdl@gmail.com</td>
-										<td>0722820907</td>
-										<td>Female</td>
-										<td>25</td>
-										<td>31/12/2022 </td>
-									</tr>
-									
-									<tr>
-										<td class="table-plus">Azize  </td>
-										<td>Tarik </td>
-										<td>Aziztrk@gmail.com</td>
-										<td>0722820989</td>
-										<td>Male</td>
-										<td>19</td>
-										<td>18/02/2023  </td>
-										<td>
+
+
+          <?php 
+            for ($i=0;$i<count($items);$i++){
+            ?>
+            <tr>
+										<td class="table-plus"><?php echo htmlspecialchars($items[$i]['fname']);?> </td>
+										<td><?php echo htmlspecialchars($items[$i]['lname']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['email']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['phone']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['gender']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['age']);?></td>
+
+										
+								<td>
 											<div class="dropdown">
 												<a
 													class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
@@ -688,46 +687,15 @@
 												</div>
 											</div>
 										</td>
-									</tr>
-									<tr>
-										<td class="table-plus">Hana 
-										</td>
-										<td>Kouiret </td>
-										<td>Hanakrt@gmail.com</td>
-										<td>0522820907</td>
-										<td>Female</td>
-										<td>33</td>
-										<td>05/03/2023  </td>
-										<td>
-											<div class="dropdown">
-												<a
-													class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle"
-													href="#"
-													role="button"
-													data-toggle="dropdown"
-												>
-													<i class="dw dw-more"></i>
-												</a>
-												<div
-													class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list"
-												>
-													<a class="dropdown-item" href="#"
-														><i class="dw dw-eye"></i> View</a
-													>
-													<a class="dropdown-item" href="#"
-														><i class="dw dw-edit2"></i> Edit</a
-													>
-													<a class="dropdown-item" href="#"
-														><i class="dw dw-edit2"></i> Schedule </a
-													>
-													<a class="dropdown-item" href="#"
-														><i class="dw dw-delete-3"></i> Delete</a
-													>
-													
-												</div>
-											</div>
-										</td>
-									</tr>
+
+			</tr>
+
+
+
+            
+            <?php
+            }
+          ?>
 									
 								</tbody>
 							</table>
@@ -740,24 +708,24 @@
 		</div>
 		
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
-		<script src="src/plugins/datatables/js/jquery.dataTables.min.js"></script>
-		<script src="src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
-		<script src="src/plugins/datatables/js/dataTables.responsive.min.js"></script>
-		<script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+		<script src="view/resources/vendors/scripts/core.js"></script>
+		<script src="view/resources/vendors/scripts/script.min.js"></script>
+		<script src="view/resources/vendors/scripts/process.js"></script>
+		<script src="view/resources/vendors/scripts/layout-settings.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
 		<!-- buttons for Export datatable -->
-		<script src="src/plugins/datatables/js/dataTables.buttons.min.js"></script>
-		<script src="src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
-		<script src="src/plugins/datatables/js/buttons.print.min.js"></script>
-		<script src="src/plugins/datatables/js/buttons.html5.min.js"></script>
-		<script src="src/plugins/datatables/js/buttons.flash.min.js"></script>
-		<script src="src/plugins/datatables/js/pdfmake.min.js"></script>
-		<script src="src/plugins/datatables/js/vfs_fonts.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/buttons.print.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/buttons.html5.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/buttons.flash.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/pdfmake.min.js"></script>
+		<script src="view/resources/src/plugins/datatables/js/vfs_fonts.js"></script>
 		<!-- Datatable Setting js -->
-		<script src="vendors/scripts/datatable-setting.js"></script>
+		<script src="view/resources/vendors/scripts/datatable-setting.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe

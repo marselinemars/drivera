@@ -9,19 +9,19 @@
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="view/resources/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="view/resources/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="view/resources/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -36,18 +36,18 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="view/resources/vendors/styles/icon-font.min.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/plugins/jquery-steps/jquery.steps.css"
+			href="view/resources/src/plugins/jquery-steps/jquery.steps.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/style.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
@@ -77,11 +77,8 @@
 			})(window, document, "script", "dataLayer", "GTM-NXZMQSS");
 		</script>
 		<!-- End Google Tag Manager -->
-		<style>
-Sure! Here's an example of CSS class that you could use to style your payment card:
+<style>
 
-css
-Copy code
 /* CSS style for the card */
 .card {
   width: 250px;
@@ -117,12 +114,12 @@ Copy code
 			<div class="container-fluid d-flex justify-content-between align-items-center">
 				<div class="brand-logo">
 					<a href="login.html">
-						<img src="logo.png" width="110" height ="290" alt=""  />
+						<img src="view/resources/logo.png" width="110" height ="290" alt=""  />
 					</a>
 				</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="login.html">Login</a></li>
+						<li><a href="index.php">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -133,13 +130,13 @@ Copy code
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6 col-lg-7">
-						<img src="vendors/images/coworking-space-3_2 (1).png" alt="" />
+						<img src="view/resources/vendors/images/coworking-space-3_2 (1).png" alt="" />
 					</div>
 					
 					<div class="col-md-6 col-lg-5">
 						<div class="register-box bg-white box-shadow border-radius-10">
 							<div class="wizard-content">
-								<form class="tab-wizard2 wizard-circle wizard">
+								<form action="index.php?action=do_signup" class="tab-wizard2 wizard-circle wizard">
 									<h5>Basic Account Credentials</h5>
 									<section>
 										<div class="form-wrap max-width-600 mx-auto">
@@ -148,19 +145,19 @@ Copy code
 													>Email Address*</label
 												>
 												<div class="col-sm-8">
-													<input type="email" class="form-control" />
+													<input type="email" name = "email" class="form-control" />
 												</div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label">Username*</label>
 												<div class="col-sm-8">
-													<input type="text" class="form-control" />
+													<input type="text" name ="name " class="form-control" />
 												</div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label">Password*</label>
 												<div class="col-sm-8">
-													<input type="password" class="form-control" />
+													<input type="password" name="password" class="form-control" />
 												</div>
 											</div>
 											<div class="form-group row">
@@ -448,7 +445,7 @@ Copy code
 					<div class="modal-body text-center font-18">
 						<h3 class="mb-20">Form Submitted!</h3>
 						<div class="mb-30 text-center">
-							<img src="vendors/images/success.png" />
+							<img src="view/resources/vendors/images/success.png" />
 						</div>
 						Please , wait for No more then  48h To get your account activated.
 
@@ -462,12 +459,12 @@ Copy code
 		<!-- success Popup html End -->
 		
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
-		<script src="src/plugins/jquery-steps/jquery.steps.js"></script>
-		<script src="vendors/scripts/steps-setting.js"></script>
+		<script src="view/resources/vendors/scripts/core.js"></script>
+		<script src="view/resources/vendors/scripts/script.min.js"></script>
+		<script src="view/resources/vendors/scripts/process.js"></script>
+		<script src="view/resources/vendors/scripts/layout-settings.js"></script>
+		<script src="view/resources/src/plugins/jquery-steps/jquery.steps.js"></script>
+		<script src="view/resources/vendors/scripts/steps-setting.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe

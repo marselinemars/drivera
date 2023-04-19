@@ -9,19 +9,19 @@
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="view/resources/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="view/resources/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="view/resources/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -36,13 +36,13 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="view/resources/vendors/styles/icon-font.min.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/style.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
@@ -80,12 +80,12 @@
 			>
 				<div class="brand-logo">
 					<a href="login.html">
-						<img src="logo.png" width="110" height ="290" alt=""  />
+						<img src="view/resources/logo.png" width="110" height ="290" alt=""  />
 					</a>
 				</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="register.html">Buy Now</a></li>
+						<li><a href="index3.html">sign up </a></li>
 					</ul>
 				</div>
 			</div>
@@ -96,21 +96,25 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6 col-lg-7">
-						<img src="1.png"  alt="" />
+						<img src="view/resources/1.png"  alt="" />
 					</div>
 					<div class="col-md-6 col-lg-5">
 						<div class="login-box bg-white box-shadow border-radius-10">
 							<div class="login-title">
 								<h2 class="text-center text-primary">Login To Drivera  </h2>
 							</div>
-							<form>
+							<form action="index.php?action=do_login" method="post">
+
+							<?php if (isset($vars['error_message'])){ ?><b style="color:gray;"><?php echo $vars['error_message'] ?></b> <?php } ?>
+
+							<br ><br>
 								<div class="select-role">
 									<div class="btn-group btn-group-toggle" data-toggle="buttons">
 										<label class="btn active">
-											<input type="radio" name="options" id="admin" />
+											<input type="radio" name="options" id="admin" value="owner" />
 											<div class="icon">
 												<img
-													src="vendors/images/briefcase.svg"
+													src="view/resources/vendors/images/briefcase.svg"
 													class="svg"
 													alt=""
 												/>
@@ -119,10 +123,10 @@
 											Owner
 										</label>
 										<label class="btn">
-											<input type="radio" name="options" id="user" />
+											<input type="radio" name="options" id="user " value="monitor"  />
 											<div class="icon">
 												<img
-													src="vendors/images/person.svg"
+													src="view/resources/vendors/images/person.svg"
 													class="svg"
 													alt=""
 												/>
@@ -134,9 +138,12 @@
 								</div>
 								<div class="input-group custom">
 									<input
-										type="text"
+										type="email"
 										class="form-control form-control-lg"
-										placeholder="Username"
+										placeholder="example@gmail.com"
+
+										name="email"
+
 									/>
 									<div class="input-group-append custom">
 										<span class="input-group-text"
@@ -149,6 +156,7 @@
 										type="password"
 										class="form-control form-control-lg"
 										placeholder="**********"
+										name="pass"
 									/>
 									<div class="input-group-append custom">
 										<span class="input-group-text"
@@ -157,49 +165,19 @@
 									</div>
 								</div>
 								<div class="row pb-30">
-									<div class="col-6">
-										<div class="custom-control custom-checkbox">
-											<input
-												type="checkbox"
-												class="custom-control-input"
-												id="customCheck1"
-											/>
-											<label class="custom-control-label" for="customCheck1"
-												>Remember</label
-											>
-										</div>
-									</div>
+
 									<div class="col-6">
 										<div class="forgot-password">
-											<a href="forgot-password.html">Forgot Password</a>
+											<a href="view/forgot-password.html">Forgot Password</a>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="input-group mb-0">
-											<!--
-											use code for form submit
-											<input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
-										-->
-											<a
-												class="btn btn-primary btn-lg btn-block"
-												href="index3.html"
-												>Sign In</a
-											>
-										</div>
-										<div
-											class="font-16 weight-600 pt-10 pb-10 text-center"
-											data-color="#707373"
-										>
-											OR
-										</div>
-										<div class="input-group mb-0">
-											<a
-												class="btn btn-outline-primary btn-lg btn-block"
-												href="register.html"
-												>Buy the app to create an account </a
-											>
+											
+											<input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In" name="sign_in">
+										
 										</div>
 									</div>
 								</div>
@@ -211,10 +189,10 @@
 		</div>
 	
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
+		<script src="view/resources/vendors/scripts/core.js"></script>
+		<script src="view/resources/vendors/scripts/script.min.js"></script>
+		<script src="view/resources/vendors/scripts/process.js"></script>
+		<script src="view/resources/vendors/scripts/layout-settings.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe

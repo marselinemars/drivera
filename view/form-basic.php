@@ -9,19 +9,19 @@
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="view/resources/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="view/resources/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="view/resources/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -36,13 +36,13 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="view/resources/vendors/styles/icon-font.min.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/style.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
@@ -76,7 +76,7 @@
 	<body>
 		<div class="pre-loader">
 			<div class="pre-loader-box">
-				<div class="loader-logo"><img src="logo.png"  width="400" 
+				<div class="loader-logo"><img src="view/resources/logo.png"  width="400" 
 					height="500" alt="" />
 				
 				</div>
@@ -182,7 +182,7 @@
 								<ul>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="view/resources/vendors/images/img.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -192,7 +192,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo1.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo1.jpg" alt="" />
 											<h3>Lea R. Frith</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -202,7 +202,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo2.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo2.jpg" alt="" />
 											<h3>Erik L. Richards</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -212,7 +212,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo3.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo3.jpg" alt="" />
 											<h3>John Doe</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -222,7 +222,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/photo4.jpg" alt="" />
+											<img src="view/resources/vendors/images/photo4.jpg" alt="" />
 											<h3>Renee I. Hansen</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -232,7 +232,7 @@
 									</li>
 									<li>
 										<a href="#">
-											<img src="vendors/images/img.jpg" alt="" />
+											<img src="view/resources/vendors/images/img.jpg" alt="" />
 											<h3>Vicki M. Coleman</h3>
 											<p>
 												Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -254,7 +254,7 @@
 							data-toggle="dropdown"
 						>
 							<span class="user-icon">
-								<img src="vendors/images/photo1.jpg" alt="" />
+								<img src="view/resources/vendors/images/photo1.jpg" alt="" />
 							</span>
 							<span class="user-name">Ross C. Lopez</span>
 						</a>
@@ -453,7 +453,7 @@
 		<div class="left-side-bar">
 			<div class="brand-logo">
 				<a href="index3.html">
-					<img src="logo.png"
+					<img src="view/resources/logo.png"
 					width= "115 "
 					height="50"
 					text-align="right-sidebar"
@@ -473,9 +473,9 @@
 								><span class="mtext">Dashboard</span>
 							</a>
 							<ul class="submenu">
-								<li><a href="index3.html">Owner Dashboard </a></li>
-								<li><a href="profile.html"> Owner profile </a></li>
-								<li><a href="DrivingInfos.html"> Driving School Information </a></li>
+								<li><a href="view/index3.html">Owner Dashboard </a></li>
+								<li><a href="view/profile.html"> Owner profile </a></li>
+								<li><a href="view/DrivingInfos.html"> Driving School Information </a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -484,7 +484,7 @@
 								><span class="mtext">Monitors </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="Monitors.html">All Monitors</a></li>
+								<li><a href="view/Monitors.html">All Monitors</a></li>
 								
 								
 							</ul>
@@ -495,7 +495,7 @@
 								><span class="mtext">Students </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="datatable.html">All Students </a></li>
+								<li><a href="view/datatable.html">All Students </a></li>
 								
 							</ul>
 						</li>
@@ -511,14 +511,14 @@
 								><span class="mtext"> Categories  </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="404.html">Category A </a></li>
-								<li><a href="404.html"> Category B </a></li>
-								<li><a href="404.html"> Category C </a></li>
-								<li><a href="404.html"> Category D </a></li>
-								<li><a href="404.html">Category E </a></li>
-								<li><a href="404.html">Category F </a></li>
-								<li><a href="404.html">Category G </a></li>
-								<li><a href="404.html">Category H </a></li>
+								<li><a href="view/404.html">Category A </a></li>
+								<li><a href="view/404.html"> Category B </a></li>
+								<li><a href="view/404.html"> Category C </a></li>
+								<li><a href="view/404.html"> Category D </a></li>
+								<li><a href="view/404.html">Category E </a></li>
+								<li><a href="view/404.html">Category F </a></li>
+								<li><a href="view/404.html">Category G </a></li>
+								<li><a href="view/404.html">Category H </a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -586,7 +586,7 @@
 								<nav aria-label="breadcrumb" role="navigation">
 									<ol class="breadcrumb">
 										<li class="breadcrumb-item">
-											<a href="index3.html">Dashboard </a>
+											<a href="view/index3.html">Dashboard </a>
 										</li>
 										<li class="breadcrumb-item active" aria-current="page">
 											Add Student 
@@ -619,10 +619,16 @@
 							<div class="pull-left">
 								<h4 class="text-blue h4">Student Information </h4>
 								<p class="mb-30">Please Enter The Student Information Carefully</p>
-							</div>
+								<?php if (isset($vars['error_message'])){ ?> <p class="mb-30" style="color:darkred"><b><?php echo $vars['error_message'] ?></b></p> <?php } ?>
+
 							
+
+
+							</div>
+
+
 						</div>
-						<form>
+						<form  id="student_credentials" method="post" action="index.php?action=do_add_student"  >
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label">First Name</label>
 								<div class="col-sm-12 col-md-10">
@@ -630,6 +636,7 @@
 										class="form-control"
 										type="text"
 										placeholder="Enter the first name"
+										name="fname"
 									/>
 								</div>
 							</div>
@@ -640,9 +647,12 @@
 										class="form-control"
 										placeholder="Enter the last name"
 										type="search"
+										name="lname"
 									/>
 								</div>
 							</div>
+							
+						 <!--
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label"> Date of Birth </label>
 								<div class="col-sm-12 col-md-10">
@@ -650,16 +660,21 @@
 										class="form-control datetimepicker"
 										placeholder="Date of Birth "
 										type="text"
+										
 									/>
 								</div>
 							</div>
+
+		                   -->
+
+
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label">Gender </label>
 								<div class="col-sm-12 col-md-10">
-									<select class="custom-select col-12">
+									<select name ="gender" form="student_credentials"class="custom-select col-12">
 										<option selected="">Choose...</option>
-										<option value="1">Male</option>
-										<option value="2">Female</option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
 										
 									</select>
 								</div>
@@ -673,9 +688,26 @@
 										class="form-control"
 										value=""
 										type="tel"
+										name="phone"
 									/>
 								</div>
 							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label"
+									>Age </label
+								>
+								<div class="col-sm-12 col-md-10">
+									<input
+										class="form-control"
+										value=""
+										type="age"
+										name="age"
+									/>
+								</div>
+							</div>
+
+
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label"
 									> Address </label
@@ -685,103 +717,47 @@
 										class="form-control"
 										value=""
 										type="text"
+										name="address"
 									/>
 								</div>
 							</div>
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label">Email</label>
 								<div class="col-sm-12 col-md-10">
-									<input class="form-control" value="email@example.com" type="text" />
-								</div>
-							</div>
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Blood Group </label>
-								<div class="col-sm-12 col-md-10">
-									<input class="form-control" value="" type="text" />
-								</div>
-							</div>
-							
-							<div class="form-group row">
-								<label
-									for="example-datetime-local-input"
-									class="col-sm-12 col-md-2 col-form-label"
-									>Start Date </label
-								>
-								<div class="col-sm-12 col-md-10">
-									<input
-										class="form-control datetimepicker"
-										placeholder="Choose Date "
-										type="text"
-									/>
+									<input class="form-control" value="email@example.com" type="text" name="email"/>
 								</div>
 							</div>
 							
 							
-						
-							
 							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label">Category </label>
+								<label class="col-sm-12 col-md-2 col-form-label" >Category </label>
 								<div class="col-sm-12 col-md-10">
-									<select class="custom-select col-12">
+									<select name ="category" form="student_credentials"class="custom-select col-12">
 										<option selected="">Choose...</option>
-										<option value="1">Category A</option>
-										<option value="2">Category B</option>
-										<option value="3">Category C</option>
-										<option value="3">Category D</option>
-										<option value="3">Category E</option>
-										<option value="3">Category F</option>
-										<option value="3">Category G</option>
-										<option value="3">Category H</option>
+										<option value="A">Category A</option>
+										<option value="B">Category B</option>
+										<option value="C">Category C</option>
+										<option value="D">Category D</option>
+										<option value="E">Category E</option>
+										<option value="F">Category F</option>
+										<option value="G">Category G</option>
+										<option value="H">Category H</option>
 									</select>
 								</div>
 							</div>
 						
 
-								<div class="form-group">
-									<label>Description </label>
-									<textarea class="form-control"></textarea>
-								</div>
 								
-								<div class="form-group">
-									<label>Upload Files </label>
-									<input
-										type="file"
-										class="form-control-file form-control height-auto"
-									/>
-
-									<br>
-									<div class="col-md-6 col-sm-12">
-										<label class="weight-600">Already Study in another driving school</label>
-										<div class="custom-control custom-radio mb-5">
-											<input
-												type="radio"
-												id="customRadio1"
-												name="customRadio"
-												class="custom-control-input"
-											/>
-											<label class="custom-control-label" for="customRadio1"
-												>Yes</label
-											>
-										</div>
-										<div class="custom-control custom-radio mb-5">
-											<input
-												type="radio"
-												id="customRadio2"
-												name="customRadio"
-												class="custom-control-input"
-											/>
-											<label class="custom-control-label" for="customRadio2"
-												>No </label
-											>
-										</div>
-										<br>
+								
+								
+										
 									<br>
 									<br>
 									<br>
 
 									<div class="wrapper">
-										<button class="">
-										  <span>Save </span>
+										<button class="" type="submit" form="student_credentials">
+										  <span>add </span>
 										  <div class="success">
 										  <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
 											
@@ -793,120 +769,9 @@
 							
 							
 						</form>
-						<div class="collapse collapse-box" id="basic-form1">
-							<div class="code-box">
-								<div class="clearfix">
-									<a
-										href="javascript:;"
-										class="btn btn-primary btn-sm code-copy pull-left"
-										data-clipboard-target="#copy-pre"
-										><i class="fa fa-clipboard"></i> Copy Code</a
-									>
-									<a
-										href="#basic-form1"
-										class="btn btn-primary btn-sm pull-right"
-										rel="content-y"
-										data-toggle="collapse"
-										role="button"
-										><i class="fa fa-eye-slash"></i> Hide Code</a
-									>
-								</div>
-								<pre><code class="xml copy-pre" id="copy-pre">
-<form>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Text</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" type="text" placeholder="Johnny Brown">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Search</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" placeholder="Search Here" type="search">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Email</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="bootstrap@example.com" type="email">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">URL</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="https://getbootstrap.com" type="url">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Telephone</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="1-(111)-111-1111" type="tel">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Password</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="password" type="password">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Number</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="100" type="number">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label for="example-datetime-local-input" class="col-sm-12 col-md-2 col-form-label">Date and time</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control datetimepicker" placeholder="Choose Date anf time" type="text">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Date</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control date-picker" placeholder="Select Date" type="text">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Month</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control month-picker" placeholder="Select Month" type="text">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Time</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control time-picker" placeholder="Select time" type="text">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Select</label>
-		<div class="col-sm-12 col-md-10">
-			<select class="custom-select col-12">
-				<option selected="">Choose...</option>
-				<option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option>
-			</select>
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Color</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="#563d7c" type="color">
-		</div>
-	</div>
-	<div class="form-group row">
-		<label class="col-sm-12 col-md-2 col-form-label">Input Range</label>
-		<div class="col-sm-12 col-md-10">
-			<input class="form-control" value="50" type="range">
-		</div>
-	</div>
-</form>
-							</code></pre>
-							</div>
-						</div>
-					</div>
+						
+
+	
 					<!-- Default Basic Forms End -->
 
 					
@@ -918,10 +783,10 @@
 		</div>
 		
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
+		<script src="view/resources/vendors/scripts/core.js"></script>
+		<script src="view/resources/vendors/scripts/script.min.js"></script>
+		<script src="view/resources/vendors/scripts/process.js"></script>
+		<script src="view/resources/vendors/scripts/layout-settings.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
