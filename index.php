@@ -10,6 +10,7 @@ include("modules/user.php");
 //Modules to be accessed only by logged users...
 
 include("modules/student.php");
+include("modules/owner.php");
 
 
 ?>
