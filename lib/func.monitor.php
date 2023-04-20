@@ -42,11 +42,33 @@ function monitor_add ($vars){
         return $ret;
     }
 
+    if (strlen($ret['error'])==0 and strlen($vars['expd'])==0) {
+        $ret['error']=" You need to your card expiration date  .";
+        return $ret;
+    }
+    if (strlen($ret['error'])==0 and strlen($vars['exp'])==0) {
+        $ret['error']=" You need to provide your experience years .";
+        return $ret;
+    }
+
+    if (strlen($ret['error'])==0 and strlen($vars['bgroup'])==0) {
+        $ret['error']=" You need to provide your blood group .";
+        return $ret;
+    }
+
+    if (strlen($ret['error'])==0 and strlen($vars['pass'])==0) {
+        $ret['error']=" You need to provide a password for the monitor  .";
+        return $ret;
+    }
+
+
+
 
 
     if (strlen($ret['error'])>0) return  $ret;
     
-    $db->query("INSERT INTO monitors (fname,lname,email,phone,gender,age) VALUES (?,?,?,?,?,?)",$vars['fname'],$vars['lname'],$vars['email'],$vars['phone'],$vars['gender'],$vars['age']);
+    $db->query("INSERT INTO monitor (fname,lname,email,phone_num,gender,age,bgroup,exp,exp_date,pass) 
+    VALUES (?,?,?,?,?,?,?,?,?,?)",$vars['fname'],$vars['lname'],$vars['email'],$vars['phone'],$vars['gender'],$vars['age'],$vars['bgroup'],$vars['exp'], $vars['expd'],$vars['pass']);
 
 
 

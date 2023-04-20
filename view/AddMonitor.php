@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title> Drivera | Add Student</title>
+		<title> Drivera | Add Monitor</title>
 
 		<!-- Site favicon -->
 		<link
@@ -474,7 +474,7 @@
 							</a>
 							<ul class="submenu">
 								<li><a href="view/index3.html">Owner Dashboard </a></li>
-								<li><a href="view/profile.html"> Owner profile </a></li>
+								<li><a href="index.php?action=owner_profile"> Owner profile </a></li>
 								<li><a href="view/DrivingInfos.html"> Driving School Information </a></li>
 							</ul>
 						</li>
@@ -484,7 +484,7 @@
 								><span class="mtext">Monitors </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="view/Monitors.html">All Monitors</a></li>
+								<li><a href="index.php?action=list_monitors">All Monitors</a></li>
 								
 								
 							</ul>
@@ -495,7 +495,7 @@
 								><span class="mtext">Students </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="view/datatable.html">All Students </a></li>
+								<li><a href="index.php?action=list_student">All Students </a></li>
 								
 							</ul>
 						</li>
@@ -581,7 +581,7 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-12">
 								<div class="title">
-									<h4>Add Student </h4>
+									<h4>Add Monitor </h4>
 								</div>
 								<nav aria-label="breadcrumb" role="navigation">
 									<ol class="breadcrumb">
@@ -589,7 +589,7 @@
 											<a href="view/index3.html">Dashboard </a>
 										</li>
 										<li class="breadcrumb-item active" aria-current="page">
-											Add Student 
+											Add Monitor
 										</li>
 									</ol>
 								</nav>
@@ -617,9 +617,9 @@
 					<div class="pd-20 card-box mb-30">
 						<div class="clearfix">
 							<div class="pull-left">
-								<h4 class="text-blue h4">Student Information </h4>
-								<p class="mb-30">Please Enter The Student Information Carefully</p>
-								<?php if (isset($vars['error_message'])){ ?> <p class="mb-30" style="color:darkred"><b><?php echo $vars['error_message'] ?></b></p> <?php } ?>
+								<h4 class="text-blue h4">Monitor Information </h4>
+								<p class="mb-30">Please Enter The Monitor Information Carefully</p>
+								
 
 							
 
@@ -652,20 +652,20 @@
 								</div>
 							</div>
 							
-						 <!--
+						 
 							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label"> Date of Birth </label>
+								<label class="col-sm-12 col-md-2 col-form-label"> Expiration date: </label>
 								<div class="col-sm-12 col-md-10">
 									<input
 										class="form-control datetimepicker"
-										placeholder="Date of Birth "
+										placeholder="expirationdate "
 										type="text"
+										name="expd"
 										
 									/>
 								</div>
 							</div>
 
-		                   -->
 
 
 							<div class="form-group row">
@@ -679,6 +679,25 @@
 									</select>
 								</div>
 							</div>
+
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label">Blood group </label>
+								<div class="col-sm-12 col-md-10">
+									<select name ="bgroup" form="monitor_credentials"class="custom-select col-12">
+										<option selected="">Choose...</option>
+										<option value="male">o+</option>
+										<option value="female">o-</option>
+										<option value="male">b+</option>
+										<option value="female">b-</option>
+										<option value="male">a+</option>
+										<option value="female">a-</option>
+										<option value="male">ab+</option>
+										<option value="female">ab-</option>
+										
+									</select>
+								</div>
+							</div>
+
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label"
 									>Phone </label
@@ -707,6 +726,20 @@
 								</div>
 							</div>
 
+							<div class="form-group row">
+								<label class="col-sm-12 col-md-2 col-form-label"
+									>Experience </label
+								>
+								<div class="col-sm-12 col-md-10">
+									<input
+										class="form-control"
+										value=""
+										type="number";
+										name="exp"
+									/>
+								</div>
+							</div>
+
 
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label"
@@ -727,36 +760,28 @@
 									<input class="form-control" value="email@example.com" type="text" name="email"/>
 								</div>
 							</div>
-							
+
 							
 							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label" >Category </label>
+								<label class="col-sm-12 col-md-2 col-form-label"
+									> Password </label
+								>
 								<div class="col-sm-12 col-md-10">
-									<select name ="category" form="monitor_credentials"class="custom-select col-12">
-										<option selected="">Choose...</option>
-										<option value="A">Category A</option>
-										<option value="B">Category B</option>
-										<option value="C">Category C</option>
-										<option value="D">Category D</option>
-										<option value="E">Category E</option>
-										<option value="F">Category F</option>
-										<option value="G">Category G</option>
-										<option value="H">Category H</option>
-									</select>
+									<input
+										class="form-control"
+										value=""
+										type="password"
+										name="pass"
+									/>
 								</div>
-							</div>
+							
 						
 
-								
-								
-								
 										
-									<br>
-									<br>
-									<br>
+								<br><br><br>
 
 									<div class="wrapper">
-										<button class="" type="submit" form="student_credentials">
+										<button class="" type="submit" form="monitor_credentials">
 										  <span>add </span>
 										  <div class="success">
 										  <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  viewBox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
@@ -767,6 +792,7 @@
 										</button>
 									  </div>
 							
+									  <?php if (isset($vars['error_message'])){ ?> <p class="mb-30" style="color:darkred"><b><?php echo $vars['error_message'] ?></b></p> <?php } ?>
 							
 						</form>
 						

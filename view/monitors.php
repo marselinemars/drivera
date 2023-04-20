@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title> Drivera | Students </title>
+		<title> Drivera | Monitors</title>
 
 		<!-- Site favicon -->
 		<link
@@ -484,7 +484,7 @@
 							</a>
 							<ul class="submenu">
 								<li><a href="index3.html">Owner Dashboard </a></li>
-								<li><a href="profile.html"> Owner profile </a></li>
+								<li><a href="pindex.php?action=owner_profile"> Owner profile </a></li>
 								<li><a href="DrivingInfos.html"> Driving School Information </a></li>
 							</ul>
 						</li>
@@ -494,7 +494,7 @@
 								><span class="mtext">Monitors </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="Monitors.html">All Monitors</a></li>
+								<li><a href="index.php?action=list_monitors">All Monitors</a></li>
 								
 								
 							</ul>
@@ -505,7 +505,7 @@
 								><span class="mtext">Students </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="datatable.html">All Students </a></li>
+								<li><a href="index.php?action=list_student">All Students </a></li>
 								
 							</ul>
 						</li>
@@ -606,7 +606,7 @@
 							</div>
 							<div class="col-md-6 col-sm-12 text-right">
 								<div class="dropdown">
-									<a class="btn btn-primary dropdown-toggle" href="form-basic.html" role="button">
+									<a class="btn btn-primary dropdown-toggle" href="index.php?action=add_monitor" role="button">
 									  Add Monitor
 									</a>
 								  </div>
@@ -635,7 +635,7 @@
 										<th>Email</th>
 										<th>Phone</th>
 										<th>Gender</th>
-										<th>Age</th>
+										<th>experience</th>
 										
 									</tr>
 								</thead>
@@ -653,9 +653,9 @@
 										<td class="table-plus"><?php echo htmlspecialchars($items[$i]['fname']);?> </td>
 										<td><?php echo htmlspecialchars($items[$i]['lname']);?></td>
 										<td><?php echo htmlspecialchars($items[$i]['email']);?></td>
-										<td><?php echo htmlspecialchars($items[$i]['phone']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['phone_num']);?></td>
 										<td><?php echo htmlspecialchars($items[$i]['gender']);?></td>
-										<td><?php echo htmlspecialchars($items[$i]['age']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['exp']);?></td>
 
 										
 								<td>

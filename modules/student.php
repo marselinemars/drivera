@@ -5,7 +5,7 @@ switch($vars['action']){
     
    case "list_student":{
 
-        $items = $db->query('SELECT * FROM students')->fetchAll();
+        $items = $db->query('SELECT * FROM student')->fetchAll();
         
         
         include("view/datatable.php");

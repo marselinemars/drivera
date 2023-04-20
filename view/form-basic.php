@@ -474,7 +474,7 @@
 							</a>
 							<ul class="submenu">
 								<li><a href="view/index3.html">Owner Dashboard </a></li>
-								<li><a href="view/profile.html"> Owner profile </a></li>
+								<li><a href="index.php?action=owner_profile"> Owner profile </a></li>
 								<li><a href="view/DrivingInfos.html"> Driving School Information </a></li>
 							</ul>
 						</li>
@@ -484,7 +484,7 @@
 								><span class="mtext">Monitors </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="view/Monitors.html">All Monitors</a></li>
+								<li><a href="index.php?action=list_monitors">All Monitors</a></li>
 								
 								
 							</ul>
@@ -495,7 +495,7 @@
 								><span class="mtext">Students </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="view/datatable.html">All Students </a></li>
+								<li><a href="ndex.php?action=list_student">All Students </a></li>
 								
 							</ul>
 						</li>
@@ -596,14 +596,7 @@
 							</div>
 							<div class="col-md-6 col-sm-12 text-right">
 								<div class="dropdown">
-									<a
-										class="btn btn-secondary dropdown-toggle"
-										href="#"
-										role="button"
-										data-toggle="dropdown"
-									>
-										April 2023 
-									</a>
+								
 									<div class="dropdown-menu dropdown-menu-right">
 										<a class="dropdown-item" href="#">Export List</a>
 										<a class="dropdown-item" href="#">Policies</a>
@@ -652,7 +645,7 @@
 								</div>
 							</div>
 							
-						 <!--
+						 
 							<div class="form-group row">
 								<label class="col-sm-12 col-md-2 col-form-label"> Date of Birth </label>
 								<div class="col-sm-12 col-md-10">
@@ -660,12 +653,13 @@
 										class="form-control datetimepicker"
 										placeholder="Date of Birth "
 										type="text"
+										name="bday"
 										
 									/>
 								</div>
 							</div>
 
-		                   -->
+		                   
 
 
 							<div class="form-group row">
@@ -693,19 +687,7 @@
 								</div>
 							</div>
 
-							<div class="form-group row">
-								<label class="col-sm-12 col-md-2 col-form-label"
-									>Age </label
-								>
-								<div class="col-sm-12 col-md-10">
-									<input
-										class="form-control"
-										value=""
-										type="age"
-										name="age"
-									/>
-								</div>
-							</div>
+							
 
 
 							<div class="form-group row">

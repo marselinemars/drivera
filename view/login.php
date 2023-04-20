@@ -85,7 +85,7 @@
 				</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="index3.html">sign up </a></li>
+						<li><a href="index.php?action=register">sign up </a></li>
 					</ul>
 				</div>
 			</div>
@@ -168,7 +168,7 @@
 
 									<div class="col-6">
 										<div class="forgot-password">
-											<a href="view/forgot-password.html">Forgot Password</a>
+											<a href="index.php?action=forgot_password">Forgot Password</a>
 										</div>
 									</div>
 								</div>

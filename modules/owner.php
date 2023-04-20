@@ -5,9 +5,10 @@ switch($vars['action']){
     
    case "owner_profile":{
 
-        $items = $db->query('SELECT * FROM theowner ')->fetchAll();
 
-        include("view/profile.php");
+     $items = $db->query('SELECT * FROM theowner ')->fetchAll();
+
+     include("view/profile.php");
 
         exit;
 
@@ -26,7 +27,7 @@ switch($vars['action']){
          $ret=owner_process_register($vars);
          
          if ($ret['status']==1){
-            header("location: index.php?action=dashboard"); 
+            header("location: index.php?action=owner_profile"); 
          }else{
             header("location: index.php?action=register&error_message=".urlencode($ret['error']));
          }

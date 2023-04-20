@@ -5,10 +5,10 @@ switch($vars['action']){
     
    case "list_monitors":{
 
-        $items = $db->query('SELECT * FROM monitors')->fetchAll();
+        $items = $db->query('SELECT * FROM monitor')->fetchAll();
         
         
-        include("view/datatable.php");
+        include("view/monitors.php");
 
         exit;
     }break;

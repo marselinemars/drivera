@@ -3,25 +3,25 @@
 	<head>
 		<!-- Basic Page Info -->
 		<meta charset="utf-8" />
-		<title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+		<title>Drivera | Forgot Password</title>
 
 		<!-- Site favicon -->
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
-			href="vendors/images/apple-touch-icon.png"
+			href="view/resources/vendors/images/apple-touch-icon.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="vendors/images/favicon-32x32.png"
+			href="view/resources/vendors/images/favicon-32x32.png"
 		/>
 		<link
 			rel="icon"
 			type="image/png"
 			sizes="16x16"
-			href="vendors/images/favicon-16x16.png"
+			href="view/resources/vendors/images/favicon-16x16.png"
 		/>
 
 		<!-- Mobile Specific Metas -->
@@ -36,13 +36,13 @@
 			rel="stylesheet"
 		/>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="vendors/styles/core.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/core.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="vendors/styles/icon-font.min.css"
+			href="view/resources/vendors/styles/icon-font.min.css"
 		/>
-		<link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
+		<link rel="stylesheet" type="text/css" href="view/resources/vendors/styles/style.css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script
@@ -73,19 +73,19 @@
 		</script>
 		<!-- End Google Tag Manager -->
 	</head>
+
 	<body>
 		<div class="login-header box-shadow">
 			<div
 				class="container-fluid d-flex justify-content-between align-items-center"
 			>
-			<div class="brand-logo">
-				<a href="login.html">
-					<img src="logo.png" width="110" height ="290" alt=""  />
-				</a>
+			<div class="loader-logo">
+				<img src="view/resources/logo.png"  width="100" 
+				height="100" alt="" />
 			</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="login.html">Login</a></li>
+						<li><a href="#">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -96,36 +96,26 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6">
-						<img src="vendors/images/forgot-password.png" alt="" />
+						<img src="view/resources/vendors/images/forgot-password.png" alt="" />
 					</div>
 					<div class="col-md-6">
 						<div class="login-box bg-white box-shadow border-radius-10">
 							<div class="login-title">
-								<h2 class="text-center text-primary">Reset Password</h2>
+								<h2 class="text-center text-primary">Forgot Password</h2>
 							</div>
-							<h6 class="mb-20">Enter your new password, confirm and submit</h6>
+							<h6 class="mb-20">
+								Enter your email address to reset your password
+							</h6>
 							<form>
 								<div class="input-group custom">
 									<input
 										type="text"
 										class="form-control form-control-lg"
-										placeholder="New Password"
+										placeholder="Email"
 									/>
 									<div class="input-group-append custom">
 										<span class="input-group-text"
-											><i class="dw dw-padlock1"></i
-										></span>
-									</div>
-								</div>
-								<div class="input-group custom">
-									<input
-										type="text"
-										class="form-control form-control-lg"
-										placeholder="Confirm New Password"
-									/>
-									<div class="input-group-append custom">
-										<span class="input-group-text"
-											><i class="dw dw-padlock1"></i
+											><i class="fa fa-envelope-o" aria-hidden="true"></i
 										></span>
 									</div>
 								</div>
@@ -138,8 +128,25 @@
 										-->
 											<a
 												class="btn btn-primary btn-lg btn-block"
-												href="index3.html"
+												href="index.php?action=reset_password"
 												>Submit</a
+											>
+										</div>
+									</div>
+									<div class="col-2">
+										<div
+											class="font-16 weight-600 text-center"
+											data-color="#707373"
+										>
+											OR
+										</div>
+									</div>
+									<div class="col-5">
+										<div class="input-group mb-0">
+											<a
+												class="btn btn-outline-primary btn-lg btn-block"
+												href="index.php?action=login"
+												>Login</a
 											>
 										</div>
 									</div>
@@ -152,10 +159,10 @@
 		</div>
 		
 		<!-- js -->
-		<script src="vendors/scripts/core.js"></script>
-		<script src="vendors/scripts/script.min.js"></script>
-		<script src="vendors/scripts/process.js"></script>
-		<script src="vendors/scripts/layout-settings.js"></script>
+		<script src="view/resources/vendors/scripts/core.js"></script>
+		<script src="view/resources/vendors/scripts/script.min.js"></script>
+		<script src="view/resources/vendors/scripts/process.js"></script>
+		<script src="view/resources/vendors/scripts/layout-settings.js"></script>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe

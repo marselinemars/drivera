@@ -113,13 +113,13 @@
 		<div class="login-header box-shadow">
 			<div class="container-fluid d-flex justify-content-between align-items-center">
 				<div class="brand-logo">
-					<a href="login.html">
+					<a href="index.php?action=login">
 						<img src="view/resources/logo.png" width="110" height ="290" alt=""  />
 					</a>
 				</div>
 				<div class="login-menu">
 					<ul>
-						<li><a href="login.html">Login</a></li>
+						<li><a href="index.php?action=login">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -134,9 +134,22 @@
 					</div>
 					
 					<div style="width:100%;" >
+					
 						<div style="width:100%;" class=" bg-white box-shadow border-radius-10">
 							<div style="padding:20px;" >
-								<form action="index.php?action=do_register" id=owner_credentials method="post">
+
+
+								<form action="index.php?action=do_register" id=owner_credentials method="post" enctype="multipart/form-data">
+
+								<?php if (isset($vars['error_message'])){ ?><br><br><b style="color:gray;"><?php echo $vars['error_message'] ?></b> <br>
+
+<br>
+
+<br> <?php } ?>
+
+								
+
+
 									<h5>Basic Account Credentials</h5>
 									<br>
 									<section >
@@ -170,8 +183,8 @@
 									<h5>Owner Personal Information</h5>
 									<br>
 									<section>
-										<div class="form-wrap max-width-600 ">
-											<div class="form-group row">
+								 <div class="form-wrap max-width-600 " >
+									  <div class="form-group row">
 												<label class="col-sm-4 col-form-label"
 													>First Name*</label
 												>
@@ -185,7 +198,16 @@
 													>Last Name*</label
 												>
 												<div class="col-sm-8">
-													<input type="text" name="lname" class="form-control" />
+													<input type="text" name="lname"  />
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-sm-4 col-form-label"
+													>Phone number </label
+												>
+												<div class="col-sm-8">
+													<input type="text" name="phone_num" class="form-control" />
 												</div>
 											</div>
 
@@ -311,7 +333,9 @@
 											</div>
 											
 										</div>
+								 </div>
 									</section>
+								
 									<!-- Step 3 -->
 								    <h5>Driving School Information</h5>
 									<br>
@@ -377,7 +401,7 @@
 												<label class="col-sm-4 col-form-label">Business License</label>
 												<div class="col-sm-8">
 													<div class="custom-file">
-														<input type="file" class="custom-file-input" name="license" id="business-license-input" accept="image/*">
+														<input type="file" class="custom-file-input" name="license" id="business-license-input" value="" accept="image/*">
 														<label class="custom-file-label" for="business-license-input">Choose file</label>
 													</div>
 												</div>
@@ -390,7 +414,6 @@
 									
 
 									<br>
-									<?php if (isset($vars['error_message'])){ ?><b style="color:gray;"><?php echo $vars['error_message'] ?></b> <?php } ?>
 
 									<br>
 

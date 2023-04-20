@@ -484,7 +484,7 @@
 							</a>
 							<ul class="submenu">
 								<li><a href="index3.html">Owner Dashboard </a></li>
-								<li><a href="profile.html"> Owner profile </a></li>
+								<li><a href="ndex.php?action=owner_profile"> Owner profile </a></li>
 								<li><a href="DrivingInfos.html"> Driving School Information </a></li>
 							</ul>
 						</li>
@@ -494,7 +494,7 @@
 								><span class="mtext">Monitors </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="Monitors.html">All Monitors</a></li>
+								<li><a href="ndex.php?action=list_monitors">All Monitors</a></li>
 								
 								
 							</ul>
@@ -505,7 +505,7 @@
 								><span class="mtext">Students </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="datatable.html">All Students </a></li>
+								<li><a href="ndex.php?action=list_student">All Students </a></li>
 								
 							</ul>
 						</li>
@@ -606,7 +606,7 @@
 							</div>
 							<div class="col-md-6 col-sm-12 text-right">
 								<div class="dropdown">
-									<a class="btn btn-primary dropdown-toggle" href="form-basic.html" role="button">
+									<a class="btn btn-primary dropdown-toggle" href="index.php?action=add_student" role="button">
 									  Add Student
 									</a>
 								  </div>
@@ -635,7 +635,7 @@
 										<th>Email</th>
 										<th>Phone</th>
 										<th>Gender</th>
-										<th>Age</th>
+										<th>Birth date</th>
 										
 									</tr>
 								</thead>
@@ -655,7 +655,7 @@
 										<td><?php echo htmlspecialchars($items[$i]['email']);?></td>
 										<td><?php echo htmlspecialchars($items[$i]['phone']);?></td>
 										<td><?php echo htmlspecialchars($items[$i]['gender']);?></td>
-										<td><?php echo htmlspecialchars($items[$i]['age']);?></td>
+										<td><?php echo htmlspecialchars($items[$i]['bday']);?></td>
 
 										
 								<td>

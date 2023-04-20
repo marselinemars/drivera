@@ -37,8 +37,12 @@ function student_add ($vars){
     }
 
     
-    if (strlen($ret['error'])==0 and strlen($vars['age'])==0) {
-        $ret['error']=" You need to provide an age .";
+    if (strlen($ret['error'])==0 and strlen($vars['bday'])==0) {
+        $ret['error']=" You need to provide a birth date .";
+        return $ret;
+    }
+    if (strlen($ret['error'])==0 and strlen($vars['category'])==0) {
+        $ret['error']=" You need to provide  a category .";
         return $ret;
     }
 
@@ -46,7 +50,8 @@ function student_add ($vars){
 
     if (strlen($ret['error'])>0) return  $ret;
     
-    $db->query("INSERT INTO students (fname,lname,email,phone,gender,age) VALUES (?,?,?,?,?,?)",$vars['fname'],$vars['lname'],$vars['email'],$vars['phone'],$vars['gender'],$vars['age']);
+    $db->query("INSERT INTO student (fname,lname,email,phone_num,gender,bday,address,category) 
+    VALUES (?,?,?,?,?,?,?,?)",$vars['fname'],$vars['lname'],$vars['email'],$vars['phone'],$vars['gender'],$vars['bday'],$vars['address'],$vars['category']);
 
 
 

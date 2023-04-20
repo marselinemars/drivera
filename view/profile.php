@@ -79,19 +79,7 @@
 		<!-- End Google Tag Manager -->
 	</head>
 	<body>
-		<div class="pre-loader">
-			<div class="pre-loader-box">
-				<div class="loader-logo"><img src="view/resources/logo.png"  width="400" 
-					height="500" alt="" />
-				
-				</div>
-				<div class="loader-progress" id="progress_div">
-					<div class="bar" id="bar1"></div>
-				</div>
-				<div class="percent" id="percent1">0%</div>
-				<div class="loading-text">Loading...</div>
-			</div>
-		</div>
+		
 
 		<div class="header">
 			<div class="header-left">
@@ -479,7 +467,7 @@
 							</a>
 							<ul class="submenu">
 								<li><a href="index3.html">Owner Dashboard </a></li>
-								<li><a href="profile.html"> Owner profile </a></li>
+								<li><a href="index.php?action=owner_profile"> Owner profile </a></li>
 								<li><a href="DrivingInfos.html"> Driving School Information </a></li>
 							</ul>
 						</li>
@@ -489,7 +477,7 @@
 								><span class="mtext">Monitors </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="Monitors.html">All Monitors</a></li>
+								<li><a href="index.php?action=list_monitors">All Monitors</a></li>
 								
 								
 							</ul>
@@ -500,7 +488,7 @@
 								><span class="mtext">Students </span>
 							</a>
 							<ul class="submenu">
-								<li><a href="datatable.html">All Students </a></li>
+								<li><a href="index.php?action=list_student">All Students </a></li>
 								
 							</ul>
 						</li>
@@ -611,11 +599,41 @@
 										class="edit-avatar"
 										><i class="fa fa-pencil"></i
 									></a>
-									<img
-										src="view/resources/vendors/images/photo1.jpg"
-										alt=""
-										class="avatar-photo"
-									/>
+
+
+									<img class="avatar-photo"  src="view/resources/vendors/images/photo1.jpg">
+									
+									
+									<?php 
+									/*  it is conflicting with the scripts  :(
+
+									$servername = "localhost";
+									$username = "root";
+									$password = "";
+									$dbname = "drivera";
+									
+									// Create connection
+									$conn = new mysqli($servername, $username, $password, $dbname);
+
+									$result = $conn->query("SELECT * FROM images ORDER BY id ASC LIMIT 1");
+
+									if ($result->num_rows > 0) {
+    								$row = $result->fetch_assoc();
+        							$imageData = $row['image'];
+  									  }
+
+									
+										// Display image
+										echo '<img class="avatar-photo"  src="data:image/jpeg;base64,' . base64_encode($imageData) . '">';
+									
+									
+									// Close connection
+									$conn->close();
+									
+
+									*/
+									?>
+
 									<div
 										class="modal fade"
 										id="modal"
@@ -656,38 +674,41 @@
 										</div>
 									</div>
 								</div>
-								<h5 class="text-center h5 mb-0">Ross C. Lopez</h5>
+								<h5 class="text-center h5 mb-0"><?php echo htmlspecialchars($items[1]['fname']) . " " . htmlspecialchars($items[1]['lname']) ;?></h5>
 								<p class="text-center text-muted font-14">
-									Lorem ipsum dolor sit amet
+									the owner of this driving school 
 								</p>
 								<div class="profile-info">
 									<h5 class="mb-20 h5 text-blue">Contact Information</h5>
 									<ul>
 									<li>
 											<span>First Name:</span>
-											Farid
+											<?php echo htmlspecialchars($items[0]['fname']);?>
 										</li>
 										<li>
 											<span>Last Name:</span>
-											Ouatar
+											<?php echo htmlspecialchars($items[0]['lname']);?>
 										</li>
 
 										<li>
 											<span>Email Address:</span>
-											Farid@test.com
+											<?php echo htmlspecialchars($items[0]['email']);?>
 										</li>
 										<li>
 											<span>Phone Number:</span>
-											619-229-0054
+											<?php echo htmlspecialchars($items[0]['phone_num']);?>
 										</li>
 										<li>
-											<span>Country:</span>
-											Algeria 
+											<span>State:</span>
+											<?php echo htmlspecialchars($items[0]['thestate']);?>
 										</li>
 										<li>
-											<span>Address:</span>
-											1807 Holden Street<br />
-											San Diego, CA 92115
+											<span>ID number :</span>
+											<?php echo htmlspecialchars($items[0]['id']);?>
+										</li>
+										<li>
+											<span>gender :</span>
+											<?php echo htmlspecialchars($items[0]['gender']);?>
 										</li>
 									</ul>
 								</div>
