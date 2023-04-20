@@ -49,27 +49,32 @@ function user_process_login($vars){
 	return $ret;
 }
 
-function user_process_signup($vars){
+function owner_process_register($vars){
 	global $db;
 	
 	$ret['status']=0;
 	$ret['error']='';
 	
 	$vars['email']=trim(strtolower($vars['email']));
-	
-    if (strlen($ret['error'])==0 and strlen($vars['email'])==0) {
-        $ret['error']=LANG_YOU_NEED_TO_PROVIDE_EMAIL;
-        return $ret;
-    }
-    if (strlen($ret['error'])==0 and strlen($vars['name'])==0) {
-        $ret['error']="You need to type in your name.";
-        return $ret;
-    }
 
-    if (strlen($ret['error'])==0 and strlen($vars['pass'])==0) {
-        $ret['error']="The password should be filled.";
+	echo "iam here";
+	
+    if (strlen($ret['error'])==0 and (!isset($vars['email'])||  !isset($vars['fname'])  || !isset($vars['password'])|| 
+	
+	!isset($vars['lname']) ||  !isset($vars['id']) || !isset($vars['gender'])|| !isset($vars['city'])
+	 ||  !isset($vars['state']) ||  !isset($vars['sname'])  || !isset($vars['fid']) ||  !isset($vars['oname'])
+	 || !isset($vars['nm']) ||  !isset($vars['nv'])|| !isset($vars['nc'])||  !isset($vars['address']) || 
+	  !isset($vars['license'])  || 
+	  !isset($vars['profileimage'])  ) )
+	
+	
+	{
+        $ret['error']="please make sure to fill all the credentials ! ";
         return $ret;
     }
+  
+
+  echo "i ckecked";
 
     if (strlen($ret['error'])>0)return  $ret;
     //search for it in the database ?
@@ -79,7 +84,7 @@ function user_process_signup($vars){
 	        return $ret;
 	}
 	//Else, there is no users in the db with the same email
-    $db->query("INSERT INTO theowner (name, email, pass) VALUES ( ?, ?, ? )", $vars['name'], $vars['email'], $vars['pass']);
+    $db->query("INSERT INTO theowner (fanme, lname,email,pass,phone_num,profileimage,id,gender,thestate) VALUES ( ?, ?, ? ,?,?,?,?,?,?)", $vars['fanme'], $vars['lname'], $vars['email'],  $vars['password'],  $vars['phone_num'],  $vars['profileimage'], $vars['id'],$vars['gender'],$vars['state']);
 				
 	//log the user directly by setting their cookies..
 	setcookie("app_email", $vars['email'], time()+(3600*24),"/");

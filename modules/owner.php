@@ -23,7 +23,7 @@ switch($vars['action']){
     
     case "do_register":{
 
-         $ret=user_process_signup($vars);
+         $ret=owner_process_register($vars);
          
          if ($ret['status']==1){
             header("location: index.php?action=dashboard"); 

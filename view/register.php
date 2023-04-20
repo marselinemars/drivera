@@ -136,7 +136,7 @@
 					<div style="width:100%;" >
 						<div style="width:100%;" class=" bg-white box-shadow border-radius-10">
 							<div style="padding:20px;" >
-								<form action="index.php?action=do_rgister" method="post">
+								<form action="index.php?action=do_register" id=owner_credentials method="post">
 									<h5>Basic Account Credentials</h5>
 									<br>
 									<section >
@@ -231,13 +231,13 @@
 												</div>
 											</div>
 											<div class="form-group">
-												<label>City </label>
+												<label>State </label>
 												<br> <br> 
 												<select
 													class="selectpicker form-control form-control-lg"
 													data-style="btn-outline-secondary btn-lg"
 													title="Not Chosen"
-													name="city"
+													name="state"
 												>
 												<option value="1">1- Adrar </option>
 												<option value="1">2- Chlef </option>
@@ -299,12 +299,17 @@
 												<option value="1">58- In Guezzam</option>
 												</select>
 											</div>
+
 											<div class="form-group row">
-												<label class="col-sm-4 col-form-label">State</label>
+												<label class="col-sm-4 col-form-label">Profile image</label>
 												<div class="col-sm-8">
-													<input name="city" type="text" class="form-control" />
+													<div class="custom-file">
+														<input type="file" class="custom-file-input" name="profileimage" id="business-license-input" accept="image/*">
+														<label class="custom-file-label" for="business-license-input">Choose file</label>
+													</div>
 												</div>
 											</div>
+											
 										</div>
 									</section>
 									<!-- Step 3 -->
@@ -384,8 +389,12 @@
 									<!-- Step 4 -->
 									
 
-									
-									<button class="form-wrap max-width-600" style=" margin-top:50px;position:relative;left:10%;" type ="submit">submit</button>
+									<br>
+									<?php if (isset($vars['error_message'])){ ?><b style="color:gray;"><?php echo $vars['error_message'] ?></b> <?php } ?>
+
+									<br>
+
+									<button  for ="owner_credentials" class="form-wrap max-width-600" style=" margin-top:50px;position:relative;left:10%;" type ="submit">submit</button>
 
 
 								</form>
