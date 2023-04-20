@@ -12,6 +12,7 @@ include("lang/".APP_LANG.".php");
 
 include("lib/func.user.php");
 include("lib/func.student.php");
+include("lib/func.monitor.php");
 
 //It is very stupid to share passwords within GIT, but for demostration, we will close our eyes on this principle.
 $dbhost = 'localhost';
